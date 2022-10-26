@@ -34,7 +34,6 @@ public class CheckPermutation extends Tools {
             System.out.println("The two provided words, " + firstWord + " & " + secondWord
                     + ", is not a permutation");
         }
-
         reader.close();
     }
 }
