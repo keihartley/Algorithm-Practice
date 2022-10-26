@@ -1,5 +1,3 @@
-import java.util.*;
-
 // Description: Problem 1.5, page 91 of the book
 
 // Problem: There are three types of edits that can be performed on strings: insert a character,

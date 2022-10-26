@@ -1,5 +1,3 @@
-import java.util.*;
-
 // Description: Problem 1.5, page 91 of the book
 
 // Problem: Implement a method to perform basic string compression using the counts of repeated

@@ -1,5 +1,3 @@
-import java.util.*;
-
 // Description: Problem 1.2, page 90 of the book
 
 // Problem: Write a method to replace all spaces in a string with '%20'. You may assume that the
