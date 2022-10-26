@@ -1,7 +1,9 @@
 import java.util.*;
 
 // Description: Problem 1.2, page 90 of the book
+
 // Problem: Given two strings, write a method to decide if one is a permutation of the other.
+
 public class CheckPermutation extends Tools {
     public static void main(String[] args) {
         // Tools
