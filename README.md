@@ -1,7 +1,7 @@
 # Algorithm Practice
-This repository contains all of the attempted programming interview questions from **Cracking the Coding Interview** by *Gayle Mcdowell*.
+This repository contains all of the attempted programming interview questions from **Cracking the Coding Interview** by *Gayle Mcdowell* and questions from Leetcode.
 
-This project is still on going, but will be completed in the next few weeks.
+I plan to continue uploading algorithm solutions for a few months.
 
 ## Languages
-Only Java has been used so far, but once the project is finished, SQL, Python, and C++ will also be utilized.
+Java and Python has been utilized
