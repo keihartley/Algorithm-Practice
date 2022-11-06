@@ -1,0 +1,32 @@
+# Given an input string s and a pattern p, implement regular expression matching 
+# with support for '.' and '*' where: '.' Matches any single character.​​​​ '*' Matches 
+# zero or more of the preceding element. The matching should cover the entire input 
+# string (not partial).
+
+# https://leetcode.com/problems/regular-expression-matching/
+
+class Solution:
+    def isMatch(self, s: str, p: str) -> bool:
+        
+        cache = {}
+        
+        def helper(i, j):
+            if (i, j) in cache:
+                return cache[(i, j)]
+            if i >= len(s) and j >= len(p):
+                return True
+            if j >= len(p):
+                return False
+            
+            match = i < len(s) and (s[i] == p[j] or p[j] == ".")
+            
+            if (j + 1) < len(p) and p[j + 1] == "*":
+                cache[(i, j)] = (helper(i, j + 2) or    # dont use *
+                (match and helper(i + 1, j)))           # use * if the first char is a match
+                return cache[(i, j)]
+            if match:
+                cache[(i, j)] = helper(i + 1, j + 1)
+                return cache[(i, j)]
+            cache[(i, j)] = False
+            return cache[(i, j)]
+        return helper(0, 0)
